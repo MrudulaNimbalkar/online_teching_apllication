@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8th/9th/10th Std State Board</title>
+    <link rel="stylesheet" href="online teching apllication.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .tab {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .tab button {
+            background: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .tab button:hover {
+            background: #e68900;
+        }
+        .content {
+            display: none;
+            padding: 20px;
+            text-align: left;
+        }
+        .active {
+            display: block;
+        }
+        h2 {
+            color: #ff9800;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <nav class="navbar">
+        <div class="logo">EduNexus</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="Courses.html" class="dropbtn">Courses</a>
+                <ul class="dropdown-content">
+                    <div class="dropdown-column">
+                        <h4>School Courses</h4>
+                        <ul>
+                            <li><a href="School _Courses1.html">8th/9th/10th Std CBSE</a></li>
+                            <li><a href="#">8th/9th/10th Std State Board</a></li>
+                            <li><a href="School _Courses3.html">10th Std English & Semi-English</a></li>
+                            <li><a href="School _Courses4.html">Summer Vacation Batches</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="dropdown-column">
+                        <h4>Jr College Courses</h4>
+                        <ul>
+                            <li><a href="Jr _College_ Course1.html">JEE - Mains</a></li>
+                            <li><a href="#">NEET - UG</a></li>
+                            <li><a href="Jr _College_ Course3.htm">MHT-CET</a></li>
+                            <li><a href="Jr _College_ Course4.htm">NEET - UG Repeaters Batch</a></li>
+                            <li><a href="Jr _College_ Course5.htm">NEET-UG & MHT-CET - Crash Course</a></li>
+                            <li><a href="Jr _College_ Course6.htm">12th State Board Test Series Batches</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" class="searchbar" placeholder="Search courses...">
+        </div>
+        <div class="mainbutton">
+            <button class="login"><a href="Login.html" target="_blank">Login</a></button>
+            <button class="signup"><a href="Registration.html" target="_blank">Sign up</a></button>
+        </div>
+    </nav>
+
+    <img src="image/image2.webp" class="img-fluid" alt="...">
+    <div class="container">
+        <h1>State Board Curriculum for 8th, 9th & 10th Standard</h1>
+        
+        <div class="tab">
+            <button onclick="showContent('std8')">8th Std</button>
+            <button onclick="showContent('std9')">9th Std</button>
+            <button onclick="showContent('std10')">10th Std</button>
+        </div>
+
+        <div id="std8" class="content active">
+            <h2>8th Standard State Board</h2>
+            <p><strong>Subjects:</strong> Mathematics, Science, Social Science, English, Hindi/Marathi, Computer Science</p>
+            <p><strong>Mathematics:</strong> Rational Numbers, Linear Equations, Geometry</p>
+            <p><strong>Science:</strong> Metals & Non-Metals, Light, Sound, Electricity</p>
+            <p><strong>Social Science:</strong> Indian History, Geography of India, Civics</p>
+        </div>
+
+        <div id="std9" class="content">
+            <h2>9th Standard State Board</h2>
+            <p><strong>Subjects:</strong> Mathematics, Science, Social Science, English, Hindi/Marathi, Computer Science</p>
+            <p><strong>Mathematics:</strong> Polynomials, Probability, Geometry</p>
+            <p><strong>Science:</strong> Atoms & Molecules, Motion, Work & Energy</p>
+            <p><strong>Social Science:</strong> Indian Freedom Struggle, Constitution, World Geography</p>
+        </div>
+
+        <div id="std10" class="content">
+            <h2>10th Standard State Board</h2>
+            <p><strong>Subjects:</strong> Mathematics, Science, Social Science, English, Hindi/Marathi, Computer Science</p>
+            <p><strong>Mathematics:</strong> Trigonometry, Quadratic Equations, Statistics</p>
+            <p><strong>Science:</strong> Chemical Reactions, Magnetic Effects of Current, Life Processes</p>
+            <p><strong>Social Science:</strong> Indian Economy, World Wars, Political Science</p>
+        </div>
+    </div>
+
+    <script>
+        function showContent(section) {
+            document.querySelectorAll('.content').forEach(div => div.classList.remove('active'));
+            document.getElementById(section).classList.add('active');
+        }
+    </script>
+    
+
+</body>
+</html>
